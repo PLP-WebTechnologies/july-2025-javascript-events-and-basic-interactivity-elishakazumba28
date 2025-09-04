@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Fun Interactive Page</h1>
+  </header>
+
+  <main>
+    <section id="events">
+      <h2>Part 1: Event Handling</h2>
+      <button id="clickBtn">Click Me!</button>
+      <p id="clickMsg"></p>
+      <p onmouseover="hoverMessage()" id="hoverText">Hover over this text!</p>
+    </section>
+
+    <section id="interactive">
+      <h2>Part 2: Interactive Features</h2>
+      <button id="darkModeBtn">Toggle Dark Mode</button>
+      <p>Counter: <span id="counter">0</span></p>
+      <button id="counterBtn">Increase Counter</button>
+    </section>
+
+    <section id="formValidation">
+      <h2>Part 3: Form Validation</h2>
+      <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password"><br><br>
+
+        <button type="submit">Submit</button>
+      </form>
+      <p id="formMsg"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
